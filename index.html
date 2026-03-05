@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aryan Bharati – Electronics and Telecommunication Engineering student at VESIT, passionate about VLSI design, PCB design, FPGA programming, and embedded systems." />
+  <meta name="keywords" content="Aryan Bharati, VLSI, PCB Design, FPGA, Embedded Systems, Electronics Engineer, VESIT" />
+  <meta name="author" content="Aryan Bharati" />
+  <meta property="og:title" content="Aryan Bharati | Electronics Engineer" />
+  <meta property="og:description" content="Interactive resume of Aryan Bharati – Electronics & Telecommunication Engineering student." />
+  <title>Aryan Bharati | Electronics Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-circuit">
+      <div class="loader-dot"></div>
+      <div class="loader-line"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-line"></div>
+      <div class="loader-dot"></div>
+    </div>
+    <p class="loader-text">Initializing…</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AB<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#games" class="nav-link">Games</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+        <a href="#" class="btn btn-sm" id="downloadBtn" download>Download CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up">Aryan Bharati</h1>
+      <div class="hero-role fade-up">
+        <span class="role-prefix">I'm a </span>
+        <span id="typingText" class="typing-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-summary fade-up">
+        Electronics &amp; Telecommunication Engineering student at VESIT, passionate about
+        VLSI design, PCB fabrication, and embedded systems.
+      </p>
+      <div class="hero-buttons fade-up">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat">
+          <span class="stat-num">9.78</span>
+          <span class="stat-label">Avg SGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">Year BE</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-avatar">
+            <div class="avatar-circle">AB</div>
+          </div>
+          <div class="about-info">
+            <h3>Aryan Bharati</h3>
+            <p class="about-role">Electronics & Telecom Engineer</p>
+            <div class="about-details">
+              <div class="detail-row">
+                <span class="detail-icon">📍</span>
+                <span>Virar, Maharashtra – 401303</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon">🎂</span>
+                <span>2nd October, 2005</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon">🎓</span>
+                <span>VESIT, Chembur</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon">🌐</span>
+                <span>English, Hindi, Marathi, Telugu (Basic)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I am an <strong>Electronics and Telecommunication Engineering</strong> student
+            with a strong interest in VLSI design and semiconductor technology. I have a
+            foundational understanding of digital electronics, PCB design, and Verilog, and
+            I am actively building my skills in circuit design and simulation tools.
+          </p>
+          <p>
+            I am seeking internship opportunities where I can apply my technical knowledge,
+            learn from industry experts, and contribute to real-world projects in FPGA
+            programming, embedded systems, and semiconductor devices.
+          </p>
+          <div class="interests-grid">
+            <h4>Areas of Interest</h4>
+            <div class="interest-tags">
+              <span class="tag">FPGA Programming & HDL</span>
+              <span class="tag">PCB Design & Fabrication</span>
+              <span class="tag">Embedded Systems Design</span>
+              <span class="tag">Semiconductor Devices</span>
+              <span class="tag">VLSI Design & Testing</span>
+            </div>
+          </div>
+          <div class="hobbies-row">
+            <span class="hobby">🚴 Cycling</span>
+            <span class="hobby">🏊 Swimming</span>
+            <span class="hobby">📚 Reading</span>
+            <span class="hobby">🌿 Planting</span>
+            <span class="hobby">🥾 Trekking</span>
+            <span class="hobby">🏏 Cricket</span>
+            <span class="hobby">🏸 Badminton</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">💻</span>
+            <span class="skill-name">C / C++ / Java</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80"></div>
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">🔌</span>
+            <span class="skill-name">PCB Soldering</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75"></div>
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">🧩</span>
+            <span class="skill-name">Data Structures & Algorithms</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70"></div>
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-name">Digital Electronics & Logic</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85"></div>
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">🖥️</span>
+            <span class="skill-name">Basic Assembly Coding</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="55"></div>
+          </div>
+          <span class="skill-percent">55%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-icon">🔧</span>
+            <span class="skill-name">Basic Verilog Coding</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="60"></div>
+          </div>
+          <span class="skill-percent">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Pursuing</div>
+            <h3>BE – Electronics & Telecommunication Engineering</h3>
+            <h4>Vivekanand Education Society Institute of Technology (VESIT), Chembur</h4>
+            <p class="timeline-date">📅 September 2023 – Present</p>
+            <div class="sgpa-grid">
+              <div class="sgpa-chip">Sem I: 9.59</div>
+              <div class="sgpa-chip">Sem II: 9.73</div>
+              <div class="sgpa-chip">Sem III: 10.00</div>
+              <div class="sgpa-chip">Sem IV: 9.82</div>
+            </div>
+            <p class="timeline-note">Currently in <strong>Third Year</strong></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Completed</div>
+            <h3>HSC (XII) – 82%</h3>
+            <h4>MGM Junior College, Virar</h4>
+            <p class="timeline-date">📅 March 2023</p>
+            <p>Maharashtra Board of Secondary Education, Mumbai Division</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Completed</div>
+            <h3>SSC (X) – 94.2%</h3>
+            <h4>St. Xavier's High School, Virar</h4>
+            <p class="timeline-date">📅 March 2021</p>
+            <p>Maharashtra Board of Primary Education, Mumbai Division</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Projects & Technical Work</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-icon">🌾</div>
+          <h3>Farm Quest</h3>
+          <p>ESP32-based Smart Farming Toy that monitors soil moisture, temperature, and automates irrigation for educational farming simulations.</p>
+          <div class="project-tags">
+            <span class="ptag">ESP32</span>
+            <span class="ptag">IoT</span>
+            <span class="ptag">Embedded C</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">🛺</div>
+          <h3>AutoWala</h3>
+          <p>A concept app for VESIT auto-rickshaw booking, designed to streamline campus transportation with a clean UI and booking flow.</p>
+          <div class="project-tags">
+            <span class="ptag">App Design</span>
+            <span class="ptag">UI/UX</span>
+            <span class="ptag">Concept</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">🚂</div>
+          <h3>Railway Crack Detector</h3>
+          <p>Built a Railway Crack Detector using ESP8266 for passenger safety applications that detects rail cracks and sends real-time alerts.</p>
+          <div class="project-tags">
+            <span class="ptag">ESP8266</span>
+            <span class="ptag">Safety Systems</span>
+            <span class="ptag">IoT</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">📊</div>
+          <h3>Fourier Transform Calculator</h3>
+          <p>Built a Fourier Transform Calculator in MATLAB using FFT algorithm for signal processing and frequency domain analysis.</p>
+          <div class="project-tags">
+            <span class="ptag">MATLAB</span>
+            <span class="ptag">FFT</span>
+            <span class="ptag">Signal Processing</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">📻</div>
+          <h3>LC Circuit Radio Receiver</h3>
+          <p>Designed and built a radio receiver using a resonant LC circuit demonstrating fundamental RF electronics and tuning principles.</p>
+          <div class="project-tags">
+            <span class="ptag">RF Electronics</span>
+            <span class="ptag">LC Circuit</span>
+            <span class="ptag">PCB Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Key Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🏆</div>
+          <h3>Second Ranker – SSC</h3>
+          <p>Achieved second rank in class 10th SSC examinations at St. Xavier's High School, Virar.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🎓</div>
+          <h3>Academic Excellence – VESIT</h3>
+          <p>Maintained exceptional SGPA across all semesters (Sem III: 10.00, overall average ~9.78) at VESIT.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon">🔬</div>
+          <h3>Hardware Workshops Organizer</h3>
+          <p>Organized various hardware workshops at VESIT, fostering hands-on learning in electronics and circuit design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra-Curricular Activities Section -->
+  <section id="activities" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Extra-Curricular Activities</h2>
+      <div class="activities-grid">
+        <div class="activity-card reveal">
+          <div class="act-icon">💡</div>
+          <div class="act-content">
+            <h3>Institute Innovation Council (IIC)</h3>
+            <p>Active member of IIC, VESIT – driving innovation and entrepreneurship initiatives on campus.</p>
+          </div>
+        </div>
+        <div class="activity-card reveal">
+          <div class="act-icon">🚴</div>
+          <div class="act-content">
+            <h3>VVCMC Cyclathon – 8th Place</h3>
+            <p>Secured 8th place at the VVCMC Cyclathon, Virar, competing against hundreds of participants.</p>
+          </div>
+        </div>
+        <div class="activity-card reveal">
+          <div class="act-icon">💻</div>
+          <div class="act-content">
+            <h3>College Hackathons & Mini-Projects</h3>
+            <p>Participated in multiple college hackathons and mini-project competitions, building real-world solutions.</p>
+          </div>
+        </div>
+        <div class="activity-card reveal">
+          <div class="act-icon">🔧</div>
+          <div class="act-content">
+            <h3>Tinkerer's Lab – EXTC VESIT</h3>
+            <p>Member of Tinkerer's Lab, EXTC VESIT – exploring electronics prototyping and maker culture.</p>
+          </div>
+        </div>
+        <div class="activity-card reveal">
+          <div class="act-icon">📋</div>
+          <div class="act-content">
+            <h3>SoRT Incharge – VESIT (2024–Present)</h3>
+            <p>Serving as SoRT (Student Outreach and Relations Team) Incharge at VESIT since 2024.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini-Games Section -->
+  <section id="games" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Mini Games</h2>
+      <p class="section-subtitle reveal">Take a break and have fun with these interactive games!</p>
+      <div class="games-tabs reveal">
+        <button class="game-tab active" data-game="memory">🎴 Memory Match</button>
+        <button class="game-tab" data-game="typing">⌨️ Typing Test</button>
+        <button class="game-tab" data-game="snake">🐍 Snake Game</button>
+        <button class="game-tab" data-game="quiz">❓ Quiz</button>
+      </div>
+
+      <!-- Memory Match Game -->
+      <div id="game-memory" class="game-panel active">
+        <div class="game-info-bar">
+          <span>Moves: <strong id="memoryMoves">0</strong></span>
+          <span>Matches: <strong id="memoryMatches">0</strong>/8</span>
+          <button class="btn btn-sm" id="memoryRestart">Restart</button>
+        </div>
+        <div id="memoryBoard" class="memory-board"></div>
+        <div id="memoryWin" class="game-win hidden">
+          🎉 You matched all pairs in <strong id="winMoves"></strong> moves!
+          <button class="btn btn-primary" id="memoryPlayAgain">Play Again</button>
+        </div>
+      </div>
+
+      <!-- Typing Speed Test -->
+      <div id="game-typing" class="game-panel">
+        <div class="game-info-bar">
+          <span>WPM: <strong id="typingWpm">0</strong></span>
+          <span>Accuracy: <strong id="typingAccuracy">100%</strong></span>
+          <span>Time: <strong id="typingTimer">30</strong>s</span>
+          <button class="btn btn-sm" id="typingRestart">Restart</button>
+        </div>
+        <div id="typingPrompt" class="typing-prompt"></div>
+        <textarea id="typingInput" class="typing-input" placeholder="Start typing here…" spellcheck="false"></textarea>
+        <div id="typingResult" class="game-win hidden">
+          ⌨️ Result: <strong id="typingFinalWpm"></strong> WPM | <strong id="typingFinalAcc"></strong> Accuracy
+          <button class="btn btn-primary" id="typingPlayAgain">Try Again</button>
+        </div>
+      </div>
+
+      <!-- Snake Game -->
+      <div id="game-snake" class="game-panel">
+        <div class="game-info-bar">
+          <span>Score: <strong id="snakeScore">0</strong></span>
+          <span>High Score: <strong id="snakeHigh">0</strong></span>
+          <button class="btn btn-sm" id="snakeStart">Start</button>
+        </div>
+        <div class="snake-wrap">
+          <canvas id="snakeCanvas" width="400" height="400"></canvas>
+          <div id="snakeOverlay" class="snake-overlay">
+            <p>🐍 Snake Game</p>
+            <p class="small">Use Arrow Keys or WASD to move</p>
+            <button class="btn btn-primary" id="snakeStartBtn">Start Game</button>
+          </div>
+        </div>
+        <div class="snake-controls-hint">
+          <span>⬆ W</span><span>⬅ A</span><span>⬇ S</span><span>➡ D</span>
+        </div>
+      </div>
+
+      <!-- Quiz Game -->
+      <div id="game-quiz" class="game-panel">
+        <div class="game-info-bar">
+          <span>Question: <strong id="quizNum">1</strong>/10</span>
+          <span>Score: <strong id="quizScore">0</strong></span>
+          <button class="btn btn-sm" id="quizRestart">Restart</button>
+        </div>
+        <div id="quizContainer" class="quiz-container">
+          <div id="quizQuestion" class="quiz-question"></div>
+          <div id="quizOptions" class="quiz-options"></div>
+        </div>
+        <div id="quizResult" class="game-win hidden">
+          🏆 Your score: <strong id="quizFinalScore"></strong>/10
+          <button class="btn btn-primary" id="quizPlayAgain">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <a href="mailto:aryanbharati0205@gmail.com">aryanbharati0205@gmail.com</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">📱</div>
+          <h3>Phone</h3>
+          <a href="tel:+919922883219">+91-9922883219</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">📍</div>
+          <h3>Address</h3>
+          <p>C/109, New Sarovar, Shripal Complex,<br />Virar – 401303, Maharashtra</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">💻</div>
+          <h3>GitHub</h3>
+          <a href="https://github.com/AryanBharati11" target="_blank" rel="noopener noreferrer">@AryanBharati11</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>Designed &amp; Built by <strong>Aryan Bharati</strong></p>
+        <p class="footer-year">© <span id="footerYear"></span> All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/animations.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
